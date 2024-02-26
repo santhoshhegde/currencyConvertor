@@ -14,35 +14,25 @@
         <form>
             <div class="amount">
                 <label for="input">Enter amount</label>
-                <input type="text" value="1" id="input">
+                <input type="number" value="1" id="input">
             </div>
     
-            <div class="dropdodown">
+            <div class="dropdown">
                 <div class="from">
+                    <p>From</p>
                     <div class="select-container">
-                        <label for="from">From<br>
-                            <img src="https://flagsapi.com/US/flat/64.png">
-                            <select name="from" id="from">
-                                <option value="INR">INR</option>
-                                <option value="USD">USD</option>
-                            </select>
-                        </label>
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from" id="from">
+                        </select>
                     </div>
                 </div>
-            </div>
-
-            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-
-            <div class="dropdodown">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 <div class="to">
+                    <p>To</p>
                     <div class="select-container">
-                        <label for="to">To<br>
-                            <img src="https://flagsapi.com/IN/flat/64.png">
-                            <select name="to" id="to">
-                                <option value="INR">INR</option>
-                                <option value="USD">USD</option>
-                            </select>
-                        </label>
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to" id="to">
+                        </select>
                     </div>
                 </div>
             </div>
@@ -54,6 +44,7 @@
 
     </div>
     
+    <script src="app.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
