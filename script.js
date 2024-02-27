@@ -1,4 +1,19 @@
 let select = document.querySelectorAll('select');
+
+
+
+
+function changeFlag(element){
+    let CurrCode = element.value;
+    let img = document.querySelector('img');
+    img.src = `https://flagsapi.com/${countryList[CurrCode]}/flat/64.png`
+    
+}
+
+
+
+
+
 for (let dropdown of select){
     for (let CurrCode in countryList){
         let option= document.createElement('option');
@@ -13,6 +28,6 @@ for (let dropdown of select){
         dropdown.append(option);
     } 
     dropdown.addEventListener('change',(evt)=>{
-        console.log("changed",evt)
+        changeFlag(evt.target);
     })
 }
