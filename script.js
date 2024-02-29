@@ -53,5 +53,5 @@ window.addEventListener('load',()=>(updateExchangeRate()));
 
 btn.addEventListener('click' , (evt)=>{
     evt.preventDefault();
-    updateExchangeRate()
+    updateExchangeRate();
 })
