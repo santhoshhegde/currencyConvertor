@@ -11,6 +11,7 @@ const updateExchangeRate = async() => {
     amtVal = amount.value;
     if(amtVal <=0 || amtVal==''){
         amount.value = 1;
+        amtVal = 1;
     }
     let url = `${BaseURL}${fromCur.value}/${toCur.value}`;
     let response = await fetch(url);
